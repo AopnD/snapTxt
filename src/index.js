@@ -1,6 +1,6 @@
 const { readExcel } = require('./excelUtils');
 const { sendWhatsAppMessage } = require('./sendMessage');
-const dotenv = require('dotenv');
+require('dotenv').config();
 
 
 const fileName = process.env.EXCEL_FILE_NAME
